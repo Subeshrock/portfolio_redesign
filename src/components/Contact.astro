@@ -2,15 +2,77 @@
   <h2 class="text-3xl font-bold mb-6">Let’s Connect</h2>
   <p class="mb-6">I’m open to opportunities and collaborations. Drop me a message 👇</p>
   <div class="flex justify-center gap-6 mb-6">
-    <a href="mailto:developer.sub@gmail.com" class="text-indigo-600 hover:underline">Email</a>
+    <a
+      href="mailto:developer.sub@gmail.com"
+      class="font-medium text-indigo-700 dark:text-indigo-300 underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500"
+    >
+      Email
+    </a>
     <a href="https://linkedin.com/in/subeshyadav" target="_blank">LinkedIn</a>
     <a href="https://github.com/Subeshrock" target="_blank">GitHub</a>
     <a href="https://dribbble.com/subesh" target="_blank">Dribbble</a>
   </div>
   <form name="contact" method="POST" data-netlify="true" class="max-w-lg mx-auto grid gap-4">
-    <input type="text" name="name" placeholder="Your Name" required class="border p-3 rounded" />
-    <input type="email" name="email" placeholder="Your Email" required class="border p-3 rounded" />
-    <textarea name="message" placeholder="Your Message" required class="border p-3 rounded"></textarea>
-    <button type="submit" class="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Send</button>
+    <div>
+      <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-200">
+        Name
+      </label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        required
+        placeholder="Your Name"
+        class="mt-1 w-full border p-3 rounded"
+      />
+    </div>
+
+    <div>
+      <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-200">
+        Email
+      </label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        required
+        placeholder="Your Email"
+        class="mt-1 w-full border p-3 rounded"
+      />
+    </div>
+
+    <div>
+      <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-200">
+        Message
+      </label>
+      <textarea
+        id="message"
+        name="message"
+        required
+        placeholder="Your Message"
+        class="mt-1 w-full border p-3 rounded"
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+    >
+      Send
+    </button>
   </form>
 </section>
+
+<script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Subesh Yadav",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Portfolio inquiries",
+    "email": "developer.sub@gmail.com",
+    "url": "https://subesh.netlify.app"
+  }
+})}
+</script>

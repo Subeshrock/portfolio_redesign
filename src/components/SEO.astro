@@ -1,0 +1,60 @@
+---
+const {
+  title = "Subesh Yadav - Software Engineer (SDE II)",
+  description = "Portfolio of Subesh Yadav, Software Engineer specializing in React, Next.js, TypeScript, and modern web architectures.",
+  url = "https://subesh.netlify.app",
+  image = "/images/preview.png"
+} = Astro.props;
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title & Description -->
+  <title>{title}</title>
+  <meta name="title" content={title} />
+  <meta name="description" content={description} />
+
+  <!-- Open Graph (for LinkedIn, Facebook) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={url} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={image} />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content={url} />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={image} />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href={url} />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.ico" />
+
+  <!-- Schema.org JSON-LD (Structured Data for Portfolio/Person) -->
+  <script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Subesh Yadav",
+    "url": url,
+    "sameAs": [
+      "https://www.linkedin.com/in/subeshyadav",
+      "https://github.com/Subeshrock",
+      "https://dribbble.com/subesh",
+      "https://twitter.com/SubeshDev",
+      "https://dev.to/subesh_yadav"
+    ],
+    "jobTitle": "Software Engineer (SDE II)",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "iRM Cloud"
+    }
+  })}
+  </script>
+</head>
