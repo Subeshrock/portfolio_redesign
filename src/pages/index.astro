@@ -8,6 +8,7 @@ import Projects from "../components/Projects.astro";
 import Education from "../components/Education.astro";
 import Awards from "../components/Awards.astro";
 import Contact from "../components/Contact.astro";
+import ThemeToggle from "../components/ThemeToggle.tsx";
 const seo = {
   title: "Subesh Yadav - Software Engineer (Portfolio)",
   description: "Portfolio of Subesh Yadav, SDE II at iRM Cloud. Experienced in React, Next.js, TypeScript, NestJS, Go, Monorepo & Microfrontend architectures.",
@@ -25,4 +26,5 @@ const seo = {
   <Education />
   <Awards />
   <Contact />
+  <ThemeToggle client:load />
 </Layout>
