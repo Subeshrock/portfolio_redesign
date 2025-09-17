@@ -117,34 +117,123 @@ import {Icon} from 'astro-icon/components'
 </section>
 
 <script type="application/ld+json">
-{JSON.stringify([
-  {
-    "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "Campus Ambassador",
-    "provider": { "@type": "Organization", "name": "EDC IIT Delhi" }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "Intern",
-    "provider": { "@type": "Organization", "name": "Bobble App" }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "JavaScript Bootcamp",
-    "provider": { "@type": "Organization", "name": "Foxmula" }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "Google Hash Code Participant"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "World IoT Hackathon Participant"
-  }
-])}
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Achievements",
+  "itemListElement": [
+    {
+      "@type": "CreativeWork",
+      "position": 1,
+      "name": "Web Development Training",
+      "provider": { "@type": "Organization", "name": "Internshala" },
+      "datePublished": "2018-05"
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 2,
+      "name": "Web Application Development",
+      "provider": { "@type": "Organization", "name": "Foxmula" },
+      "datePublished": "2019-05"
+    },
+    {
+      "@type": "Event",
+      "position": 3,
+      "name": "Participant - World IOT Hackathon",
+      "organizer": { "@type": "Organization", "name": "GeeksforGeeks and IEEE" },
+      "startDate": "2019-03"
+    },
+    {
+      "@type": "Event",
+      "position": 4,
+      "name": "Participant - Google Hash Code",
+      "organizer": { "@type": "Organization", "name": "Google" },
+      "startDate": "2019-03"
+    },
+    {
+      "@type": "Event",
+      "position": 5,
+      "name": "Attendee - Microsoft C# Corner Developer Event",
+      "organizer": { "@type": "Organization", "name": "Microsoft" },
+      "startDate": "2017-11"
+    },
+    {
+      "@type": "Event",
+      "position": 6,
+      "name": "Participant - Mobile Developer Fest",
+      "organizer": { "@type": "Organization", "name": "Google Developers" },
+      "startDate": "2018-10"
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 7,
+      "name": "100 Days of UI Challenge",
+      "provider": { "@type": "Organization", "name": "Daily UI" },
+      "datePublished": "2022-09"
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 8,
+      "name": "100 Days of Rust Journey",
+      "provider": { "@type": "Person", "name": "Subesh Yadav" },
+      "datePublished": "2025-07",
+      "dateModified": "2025-09",
+      "inLanguage": "en",
+      "description": "Self-initiated learning challenge in Rust programming."
+    }
+  ]
+}
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Certifications",
+  "itemListElement": [
+    {
+      "@type": "CreativeWork",
+      "position": 1,
+      "name": "Introduction To UX And Accessible Design",
+      "provider": { "@type": "Organization", "name": "UAL Creative Computing Institute and Institute Of Coding" },
+      "datePublished": "2020-09"
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 2,
+      "name": "Creating A Great User Experience For Mobile Apps",
+      "provider": { "@type": "Organization", "name": "University Of Leeds and Institute Of Coding" },
+      "datePublished": "2020-04"
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 3,
+      "name": "Digital Skills: User Experience",
+      "provider": { "@type": "Organization", "name": "Accenture" },
+      "datePublished": "2020-04"
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 4,
+      "name": "Digital Skills: Mobile",
+      "provider": { "@type": "Organization", "name": "Accenture" },
+      "datePublished": "2020-04"
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 5,
+      "name": "JavaScript Bible - JavaScript Bootcamp",
+      "provider": { "@type": "Organization", "name": "Udemy" },
+      "datePublished": "2019-12"
+    },
+    {
+      "@type": "CreativeWork",
+      "position": 6,
+      "name": "Foundation of Front-End Web Development",
+      "provider": { "@type": "Organization", "name": "Udemy" },
+      "datePublished": "2018-03"
+    }
+  ]
+}
+</script>
+

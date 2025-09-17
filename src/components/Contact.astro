@@ -113,15 +113,38 @@ import {Icon} from 'astro-icon/components'
     </section>
 
 <script type="application/ld+json">
-{JSON.stringify({
+{
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Subesh Yadav",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Portfolio inquiries",
-    "email": "developer.sub@gmail.com",
-    "url": "https://subesh.netlify.app"
+  "url": "https://subesh.netlify.app",
+  "email": "developer.sub@gmail.com",
+  "telephone": "+91-9781141836",
+  "sameAs": [
+    "https://linkedin.com/in/subeshyadav",
+    "https://github.com/Subeshrock",
+    "https://dev.to/subesh_yadav",
+    "https://dribbble.com/subesh",
+    "https://twitter.com/SubeshDev"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "General Inquiries",
+      "email": "developer.sub@gmail.com"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "Mobile / WhatsApp",
+      "telephone": "+91-9781141836"
+    }
+  ],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Resume",
+    "url": "https://subesh.netlify.app/Subesh_Resume.pdf",
+    "name": "Professional Resume of Subesh Yadav"
   }
-})}
+}
 </script>
+

@@ -1,9 +1,25 @@
 ---
 const {
-  title = "Subesh Yadav - Software Engineer (SDE II)",
-  description = "Portfolio of Subesh Yadav, Software Engineer specializing in React, Next.js, TypeScript, and modern web architectures.",
+  title = "Subesh Yadav - Full-Stack Developer & UI/UX Designer",
+  description = "Portfolio of Subesh Yadav, SDE II at iRM Cloud. Skilled in React, Next.js, TypeScript, NestJS, Go, Rust, Monorepo & Microfrontend architectures, CI/CD pipelines, and UI/UX design.",
   url = "https://subesh.netlify.app",
-  image = "/images/preview.png"
+  image = "/images/preview.png",
+  author = "Subesh Yadav",
+  keywords = [
+    "Subesh Yadav",
+    "Full-Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript Developer",
+    "NestJS Developer",
+    "Go Developer",
+    "Rust Developer",
+    "UI/UX Designer",
+    "Frontend Engineer",
+    "Backend Developer",
+    "Software Engineer Portfolio",
+    "Software Engineer"
+  ]
 } = Astro.props;
 ---
 
@@ -15,46 +31,121 @@ const {
   <title>{title}</title>
   <meta name="title" content={title} />
   <meta name="description" content={description} />
+  <meta name="keywords" content={keywords.join(", ")} />
+  <meta name="author" content={author} />
 
-  <!-- Open Graph (for LinkedIn, Facebook) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content={url} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content={image} />
+  <meta property="og:image" content={url + image} />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content={url} />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={image} />
+  <meta name="twitter:image" content={url + image} />
+  <meta name="twitter:creator" content="@SubeshDev" />
 
   <!-- Canonical URL -->
   <link rel="canonical" href={url} />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon.ico" />
+  <!-- Favicons -->
+  <!-- <link rel="icon" type="image/png" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" /> -->
 
-  <!-- Schema.org JSON-LD (Structured Data for Portfolio/Person) -->
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
-  {JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Subesh Yadav",
-    "url": url,
-    "sameAs": [
-      "https://www.linkedin.com/in/subeshyadav",
-      "https://github.com/Subeshrock",
-      "https://dribbble.com/subesh",
-      "https://twitter.com/SubeshDev",
-      "https://dev.to/subesh_yadav"
-    ],
-    "jobTitle": "Software Engineer (SDE II)",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "iRM Cloud"
+  {JSON.stringify([
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Subesh Yadav",
+      "url": url,
+      "sameAs": [
+        "https://www.linkedin.com/in/subeshyadav",
+        "https://github.com/Subeshrock",
+        "https://dribbble.com/subesh",
+        "https://twitter.com/SubeshDev",
+        "https://dev.to/subesh_yadav"
+      ],
+      "jobTitle": "Software Engineer II",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "iRM Cloud"
+      },
+      "knowsAbout": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "NestJS",
+        "Go",
+        "Rust",
+        "Monorepo",
+        "Microfrontend",
+        "CI/CD",
+        "UI/UX Design"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": url
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": url + "#about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Skills",
+          "item": url + "#skills"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Experience",
+          "item": url + "#experience"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Projects",
+          "item": url + "#projects"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Education",
+          "item": url + "#education"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Awards",
+          "item": url + "#awards"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Contact",
+          "item": url + "#connect"
+        }
+      ]
     }
-  })}
+  ])}
   </script>
 </head>
