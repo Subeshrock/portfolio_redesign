@@ -1,21 +1,24 @@
 ---
-import { motion } from "framer-motion";
+import { Image } from "astro:assets";
+import profilePic from '../../public/images/subesh.jpg';
 ---
 
-<section id="about" class="py-20 reveal">
-  <motion.h2
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6 }}
-    viewport={{ once: true }}
-    className="text-3xl font-bold mb-6"
-  >
-    About Me
-  </motion.h2>
-  <p class="text-lg leading-relaxed">
-    I’m a Software Engineer with 2.5+ years of experience building scalable applications using
-    <span class="font-semibold">React, Next.js, TypeScript</span>, and backend services in
-    <span class="font-semibold">NestJS & Go</span>. I lead frontend teams, implement modern architectures,
-    and deliver secure, user-focused solutions across global teams.
-  </p>
+<!-- About Section -->
+<section id="about" class="py-16 bg-[var(--color-bg-secondary)]">
+  <div class="container mx-auto px-4">
+    <div class="flex gap-8 px-30">
+      <div class="fade-in">
+        <Image src={profilePic} alt="Profile" class="rounded-full object-cover w-56 h-56" />
+      </div>
+      <div class="fade-in">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 fade-in">Subesh Yadav</h1>
+        <h2 class="text-xl md:text-2xl text-[var(--color-accent)] mb-8 fade-in">Full-Stack Developer & UI/UX Designer</h2>
+        <p class="mb-4 text-[var(--color-text-secondary)]">Software Engineer with 2.5+ years of experience building scalable web applications using <span class="text-white">React, Next.js, and TypeScript</span>, with contributions to backend <span class="text-white">Micro-Services</span> <span class="text-white">using NestJS and Go</span>.
+        </p>
+        <p class="mb-4 text-[var(--color-text-secondary)]"><span class="text-white">Led frontend team</span>, implemented <span class="text-white">modular architectures (Monorepo & Micro frontend)</span>, introduced <span class="text-white">robust testing and CI/CD pipelines</span>, and <span class="text-white">collaborated globally</span> to deliver <span class="text-white">secure, performant, and user-focused</span> solutions.
+        </p>
+        <!-- <p class="mb-6 text-[var(--color-text-secondary)]"></p> -->
+      </div>
+    </div>
+  </div>
 </section>
