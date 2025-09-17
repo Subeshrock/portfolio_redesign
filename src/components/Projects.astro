@@ -1,23 +1,107 @@
----
-// import { Image } from 'astro:assets';
-// import subhotel from '../../public/images/subhotel.png'
-// import suniture from '../../public/images/suniture.png'
----
-<section id="projects" class="py-20">
-  <h2 class="text-3xl font-bold mb-6">Projects</h2>
-  <div class="grid md:grid-cols-2 gap-6">
-    <div class="p-6 border rounded-lg hover:shadow-xl hover:-translate-y-1 transform transition-all duration-300">
-      <!-- <Image src={subhotel} alt="Project 1" class="rounded mb-4" /> -->
-      <h3 class="text-xl font-semibold">Reusable React Component Library</h3>
-      <p class="mt-2">Boosted development speed by 70% and ensured consistent UI across apps.</p>
-    </div>
-    <div class="p-6 border rounded-lg hover:shadow-xl hover:-translate-y-1 transform transition-all duration-300">
-      <!-- <Image src={suniture} alt="Project 2" class="rounded mb-4" /> -->
-      <h3 class="text-xl font-semibold">VAPT Integration</h3>
-      <p class="mt-2">Aligned apps with client compliance mandates and enhanced security posture.</p>
-    </div>
-  </div>
-</section>
+<!-- Projects Section -->
+    <section id="projects" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title fade-in  text-center">My Projects</h2>
+            <p class="max-w-3xl mx-auto mb-12 text-lg text-center text-[var(--color-text-secondary)] fade-in">A selection of my work, showcasing my skills in full-stack development and UI/UX design.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card card fade-in">
+                    <h3 class="text-xl font-semibold mb-3">Ganaka - Expense Tracker</h3>
+                    <p class="text-[var(--color-text-secondary)] mb-4">A distributed, event-driven microservices architecture built with a focus on scalability and a modern CI/CD + observability stack. The system uses asynchronous communication for loose coupling and a comprehensive data layer for efficient, real-time analytics. Configured for gull automated performance and load testing</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Rust (Axum)</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">PostgreSQL</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Redis</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">NATS</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Prometheus</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Grafana</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Docker</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Kubernetes</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Github Actions (Workflows)</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">K6</span>
+                    </div>
+                    <a href="#" class="text-[var(--color-accent)] font-medium hover:underline">View Project →</a>
+                </div>
+                
+                <div class="project-card card fade-in">
+                    <h3 class="text-xl font-semibold mb-3">Deal Simulator</h3>
+                    <p class="text-[var(--color-text-secondary)] mb-4">A fully front-end deal calculator designed for financial modeling and analysis. The application takes various financial inputs and uses client-side logic to generate a detailed summary, including a visual chart of potential deal outcomes. Users can also export a professional PDF report containing the calculations and charts.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Next.js</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">React</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Tailwind</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Recharts</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">React Hook Form</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">PDF - Lib</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Shadcn UI</span>
+                    </div>
+                    <a href="#" class="text-[var(--color-accent)] font-medium hover:underline">View Project →</a>
+                </div>
+                
+                <div class="project-card card fade-in">
+                    <h3 class="text-xl font-semibold mb-3">Full Stack Todo App</h3>
+                    <p class="text-[var(--color-text-secondary)] mb-4">A complete full-stack todo application built on a monorepo architecture. The project features a robust NestJS backend with a PostgreSQL database, a dynamic Next.js frontend with Redux Toolkit Query for data management, and a shared UI library for a consistent design. It includes comprehensive end-to-end testing with Playwright.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">NextJS</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">React</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Redux</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">NestJS</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">PostgreSQL</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Tailwind</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Shadcn UI</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">NX</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Playwright</span>
+                    </div>
+                    <a href="#" class="text-[var(--color-accent)] font-medium hover:underline">View Project →</a>
+                </div>
+
+                <div class="project-card card fade-in">
+                    <h3 class="text-xl font-semibold mb-3">Monorepo with Shared UI Library & Design System Setup</h3>
+                    <p class="text-[var(--color-text-secondary)] mb-4">A robust monorepo setup demonstrating a scalable approach to building a shared UI library. This project utilizes NX for a monorepo architecture, Storybook for component documentation and development, and Shadcn UI for a pre-built design system based on the Atomic Design methodology. The setup includes comprehensive automated testing for accessibility, interaction, and snapshots, all integrated into a CI/CD pipeline to ensure quality and maintainability.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">NX</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Tailwind</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Storybook</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Shadcn UI</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Atomic Design</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">CI/CD</span>
+                    </div>
+                    <a href="#" class="text-[var(--color-accent)] font-medium hover:underline">View Project →</a>
+                </div>
+
+                <div class="project-card card fade-in">
+                    <h3 class="text-xl font-semibold mb-3">Full Stack Note Taking App</h3>
+                    <p class="text-[var(--color-text-secondary)] mb-4">A complete full-stack note-taking application built on a monorepo architecture. The project features a robust NestJS backend with a PostgreSQL database, a dynamic Next.js frontend with Redux Toolkit Query for data management, and a shared UI library for a consistent design. It includes comprehensive end-to-end testing with Playwright.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">NextJS</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">React</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Redux</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">NestJS</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">PostgreSQL</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Tailwind</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Shadcn UI</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">NX</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Playwright</span>
+                    </div>
+                    <a href="#" class="text-[var(--color-accent)] font-medium hover:underline">View Project →</a>
+                </div>
+
+                <div class="project-card card fade-in">
+                    <h3 class="text-xl font-semibold mb-3">Automated API Testing Setup with K6</h3>
+                    <p class="text-[var(--color-text-secondary)] mb-4">A fully automated, full-stack API testing setup utilizing Docker containers. The project is centered on K6 for performance and load testing, offering two dashboard options: a real-time, custom setup with InfluxDB and Grafana, or a standalone K6 dashboard for quick insights. It is also configured to generate reports in Excel and plain text files. This setup is highly portable and can run on any environment, locally or on the cloud.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">K6</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">InfluxDB</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Grafana</span>
+                        <span class="text-xs px-2 py-1 bg-[var(--color-bg-primary)] rounded">Docker</span>
+                    </div>
+                    <a href="#" class="text-[var(--color-accent)] font-medium hover:underline">View Project →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 <script type="application/ld+json">
 {JSON.stringify([
