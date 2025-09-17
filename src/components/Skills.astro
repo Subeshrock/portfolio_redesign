@@ -1,15 +1,286 @@
-<section id="skills" class="py-20">
-  <h2 class="text-3xl font-bold mb-6">Skills</h2>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-    <div class="p-4 border rounded-lg shadow">React</div>
-    <div class="p-4 border rounded-lg shadow">Next.js</div>
-    <div class="p-4 border rounded-lg shadow">TypeScript</div>
-    <div class="p-4 border rounded-lg shadow">Rust</div>
-    <div class="p-4 border rounded-lg shadow">NestJS</div>
-    <div class="p-4 border rounded-lg shadow">Go</div>
-    <div class="p-4 border rounded-lg shadow">Docker</div>
-    <div class="p-4 border rounded-lg shadow">GitHub Actions</div>
-  </div>
+---
+import {Icon} from 'astro-icon/components'
+import { Image } from "astro:assets";
+
+// testing
+import octopus from '../../public/images/testing/octopus-32x32.png';
+
+// architectures
+import monorepo from '../../public/images/architectures/use-case.png';
+import microfrontend from '../../public/images/architectures/centralized.png';
+import microservices from '../../public/images/architectures/distribution.png';
+
+// misc
+import ui from '../../public/images/misc/ui-design.png';
+import prototyping from '../../public/images/misc/prototype.png';
+import vapt from '../../public/images/misc/penetration-testing.png';
+
+---
+
+<!-- Skills Section -->
+<section id="skills" class="py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="section-title fade-in text-center">My Skillset</h2>
+        <p class="max-w-3xl mx-auto mb-12 text-lg text-center text-[var(--color-text-secondary)] fade-in">A comprehensive overview of my technical capabilities. I'm passionate about continuous learning and expanding my expertise.</p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8">
+            <div class="skill-category p-6 rounded-lg border fade-in">
+                <div class="flex gap-2 items-baseline">
+                    <Icon name="material-symbols:translate" class="w-5 h-5 text-[var(--color-accent)]"/>
+                    <h3 class="text-xl font-semibold mb-4">Languages</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <div class="skill-tag">
+                        <Icon name="devicon:html5" class="w-5 h-5"/>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:css3" class="w-5 h-5"/>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:sass" class="w-5 h-5"/>
+                        <span>SASS</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="logos:javascript" class="w-5 h-5"/>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="logos:typescript-icon" class="w-5 h-5"/>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="logos:rust" class="w-5 h-5"/>
+                        <span>Rust</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:azuresqldatabase" class="w-5 h-5"/>
+                        <span>SQL</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category p-6 rounded-lg border fade-in">
+                <div class="flex gap-2 items-baseline">
+                    <Icon name="material-symbols:layers" class="w-5 h-5 text-[var(--color-accent)]"/>
+                    <h3 class="text-xl font-semibold mb-4">Architectures</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <div class="skill-tag">
+                        <Image src={monorepo} alt="Monorepo Logo" />
+                        <span>Monorepo</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Image src={microfrontend} alt="Micro-Frontend Logo" />
+                        <span>Micro-Frontend</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Image src={microservices} alt="Micro-Services Logo" />
+                        <span>Micro-Services</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category p-6 rounded-lg border fade-in">
+                <div class="flex gap-2 items-baseline">
+                    <Icon name="material-symbols:widgets" class="w-5 h-5 text-[var(--color-accent)]"/>
+                    <h3 class="text-xl font-semibold mb-4">Frameworks/Libs</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <div class="skill-tag">
+                        <Icon name="devicon:react-wordmark" class="w-5 h-5"/>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:astro" class="w-5 h-5"/>
+                        <span>Astro</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:redux" class="w-5 h-5"/>
+                        <span>Redux</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:tailwindcss" class="w-5 h-5"/>
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:nextjs" class="w-5 h-5"/>
+                        <span>NextJS</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:nodejs" class="w-5 h-5"/>
+                        <span>NodeJS</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:express" class="w-5 h-5"/>
+                        <span>Express</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:nestjs" class="w-5 h-5"/>
+                        <span>NestJS</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:angular" class="w-5 h-5"/>
+                        <span>Angular</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category p-6 rounded-lg border fade-in">
+                <div class="flex gap-2 items-baseline">
+                    <Icon name="material-symbols:biotech" class="w-5 h-5 text-[var(--color-accent)]"/>
+                    <h3 class="text-xl font-semibold mb-4">Testing</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <div class="skill-tag">
+                        <Icon name="logos:jest" class="w-5 h-5"/>
+                        <span>Jest</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:playwright" class="w-5 h-5"/>
+                        <span>Playwright</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Image src={octopus} alt="React Testing Library Logo" />
+                        <span>React Testing Library</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:k6" class="w-5 h-5"/>
+                        <span>K6</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category p-6 rounded-lg border fade-in">
+                <div class="flex gap-2 items-baseline">
+                    <Icon name="material-symbols:database" class="w-5 h-5 text-[var(--color-accent)]"/>
+                    <h3 class="text-xl font-semibold mb-4">Databases</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <div class="skill-tag">
+                        <Icon name="devicon:mysql" class="w-5 h-5"/>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:sqlite" class="w-5 h-5"/>
+                        <span>SQLite</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:postgresql" class="w-5 h-5"/>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:microsoftsqlserver" class="w-5 h-5"/>
+                        <span>SQLServer</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:influxdb" class="w-5 h-5"/>
+                        <span>InfluxDB</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="logos:mongodb-icon" class="w-5 h-5"/>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:redis" class="w-5 h-5"/>
+                        <span>Redis</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category p-6 rounded-lg border fade-in">
+                <div class="flex gap-2 items-baseline">
+                    <Icon name="material-symbols:build" class="w-5 h-5 text-[var(--color-accent)]"/>
+                    <h3 class="text-xl font-semibold mb-4">Tools</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <div class="skill-tag">
+                        <Icon name="devicon:git" class="w-5 h-5"/>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:github" class="w-5 h-5"/>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:grafana" class="w-5 h-5"/>
+                        <span>Grafana</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="logos:storybook-icon" class="w-5 h-5"/>
+                        <span>Storybook</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:figma" class="w-5 h-5"/>
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="logos:nx" class="w-5 h-5"/>
+                        <span>NX</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:postman" class="w-5 h-5"/>
+                        <span>Postman</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category p-6 rounded-lg border fade-in">
+                <div class="flex gap-2 items-baseline">
+                    <Icon name="material-symbols:cloud-sync" class="w-5 h-5 text-[var(--color-accent)]"/>
+                    <h3 class="text-xl font-semibold mb-4">CI/CD - DevOps</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <div class="skill-tag">
+                        <Icon name="devicon:githubactions" class="w-5 h-5"/>
+                        <span>GitHub Actions</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="logos:docker-icon" class="w-5 h-5"/>
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category  p-6 rounded-lg border fade-in">
+                <div class="flex gap-2 items-baseline">
+                    <Icon name="material-symbols:devices" class="w-5 h-5 text-[var(--color-accent)]"/>
+                    <h3 class="text-xl font-semibold mb-4">Cross Platform</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <div class="skill-tag">
+                        <Icon name="devicon:reactnative-wordmark" class="w-5 h-5"/>
+                        <span>React Native</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Icon name="devicon:tauri" class="w-5 h-5"/>
+                        <span>Tauri</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category  p-6 rounded-lg border fade-in">
+                <div class="flex gap-2 items-baseline">
+                    <Icon name="material-symbols:more-horiz" class="w-5 h-5 text-[var(--color-accent)]"/>
+                    <h3 class="text-xl font-semibold mb-4">Others/Misc</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <div class="skill-tag">
+                        <Image src={ui} alt="UI/UX Design Logo" />
+                        <span>UI/UX Design</span>
+                    </div>
+                    <div class="skill-tag">
+                        <Image src={prototyping} alt="Prototyping Logo" />
+                        <span>Prototyping</span>
+                    </div><div class="skill-tag">
+                        <Image src={vapt} alt="VAPT Logo" />
+                        <span>VAPT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <script type="application/ld+json">
