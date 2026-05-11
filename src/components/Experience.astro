@@ -25,6 +25,20 @@
                 </div>
 
                 <div class="timeline-item fade-in">
+                    <h3 class="text-xl font-semibold">Software Engineer (Architecture & Prototyping)</h3>
+                    <p class="text-[var(--color-accent)]">TravTech</p>
+                    <p class="text-[var(--color-text-secondary)] mb-2">Dec 2025 – Jan 2026 (Health sabbatical due to slipped disc)</p>
+                    <p class="text-[var(--color-accent)] mb-2">Engaged to architect and bootstrap a full-stack system unifying multi-source GDS data for a travel agency platform. Designed the entire technical foundation for web, mobile, and analytics in a monorepo—completing architecture planning, design system setup, and core library implementation before departing for medical leave.</p>
+                    <ul class="list-disc pl-5 text-[var(--color-text-secondary)]">
+                      <li><b>Data Unification & Analytics Pipeline:</b> Architected a dual-service backend: a Node.js microservice for CRUD operations and data transformation from multiple GDS systems into a unified relational model, paired with a Python service for business analytics on that data using ClickHouse.</li>
+                        <li><b>Cross-Platform Integration Strategy:</b> Built a shared React Query hooks library to encapsulate all API interactions, explicitly designed for reuse across both the planned Next.js web application and a React Native mobile app—eliminating duplicate logic and ensuring consistent data fetching patterns.</li>
+                        <li><b>Developer Experience & Design System:</b> Collaborated with UI/UX to implement an atomic design system in Storybook, including a component library, i18n library, and the API hooks library, all managed within an Nx monorepo for seamless dependency management.</li>
+                        <li><b>Quality Framework:</b> Defined the full-testing architecture from day one, integrating Playwright for end-to-end, Jest for unit/integration, and k6 for load testing, along with Storybook interaction tests—laying a foundation for production reliability.</li>
+                        <li><b>State Management Strategy:</b> Selected Zustand for application state to keep global state light and testable, deliberately decoupling it from the shared API hooks for maximum reusability across platforms.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item fade-in">
                     <h3 class="text-xl font-semibold">Intern</h3>
                     <p class="text-[var(--color-accent)]">Bobble App</p>
                     <p class="text-[var(--color-text-secondary)] mb-2">Spring 2018</p>
